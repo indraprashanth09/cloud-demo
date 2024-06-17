@@ -5,10 +5,10 @@ FROM openjdk:11
 WORKDIR /app
 
 # Copy the Java source code to the working directory
-COPY HelloWorld.java .
+COPY helloworld.java .
 
 # Compile the Java source code
-RUN javac HelloWorld.java
+RUN javac helloworld.java
 
 # Define the command to run the application
-CMD ["java", "HelloWorld"]
+CMD ["java", "helloworld"]
