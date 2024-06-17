@@ -65,5 +65,5 @@ jobs:
                    EOF
                    cat test.yml
                    docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-                   docker pull iprashanth07/helloworld-java:cf366b6
-                   docker run -t -d iprashanth07/helloworld-java:cf366b6
+                   docker pull iprashanth07/helloworld-java:fd15a04
+                   docker run -t -d iprashanth07/helloworld-java:fd15a04
