@@ -60,10 +60,3 @@ jobs:
                    mkdir Github_to_Droplet
                    cd Github_to_Droplet
                    touch test.yml
-                   cat <<EOF > test.yml
-                   Hello! The connection from Github to Droplet is Successfull!
-                   EOF
-                   cat test.yml
-                   docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-                   docker pull iprashanth07/helloworld-java:fd15a04
-                   docker run -t -d iprashanth07/helloworld-java:fd15a04
